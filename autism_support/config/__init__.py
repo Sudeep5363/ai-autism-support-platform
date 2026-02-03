@@ -4,7 +4,7 @@ Configuration Module
 Configuration and settings for the autism support platform.
 """
 
-from typing import Dict, Optional
+from typing import Any, Dict, Optional
 import os
 
 
@@ -54,7 +54,7 @@ class Config:
             }
         }
     
-    def get(self, key: str, default: Optional[any] = None) -> any:
+    def get(self, key: str, default: Optional[Any] = None) -> Any:
         """
         Get a configuration value.
         
@@ -76,7 +76,7 @@ class Config:
         
         return value
     
-    def set(self, key: str, value: any) -> None:
+    def set(self, key: str, value: Any) -> None:
         """
         Set a configuration value.
         
