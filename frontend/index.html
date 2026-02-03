@@ -8,8 +8,56 @@
 </head>
 <body>
     <div id="app">
-        <h1>AI Autism Support Platform</h1>
-        <div id="content"></div>
+        <h1>🧠 AI Autism Support Platform</h1>
+        
+        <div class="card">
+            <h2>Sensory Environment Monitor</h2>
+            <p class="subtitle">Adjust sliders to match current sensory levels</p>
+            
+            <form id="sensoryForm">
+                <div class="input-group">
+                    <label for="soundLevel">
+                        <span class="icon">🔊</span> Sound Level: <span id="soundValue">50</span>
+                    </label>
+                    <input type="range" id="soundLevel" min="0" max="100" value="50" class="slider">
+                    <div class="range-labels">
+                        <span>Quiet</span>
+                        <span>Loud</span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="lightLevel">
+                        <span class="icon">💡</span> Light Level: <span id="lightValue">50</span>
+                    </label>
+                    <input type="range" id="lightLevel" min="0" max="100" value="50" class="slider">
+                    <div class="range-labels">
+                        <span>Dim</span>
+                        <span>Bright</span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="touchLevel">
+                        <span class="icon">✋</span> Touch Sensitivity: <span id="touchValue">50</span>
+                    </label>
+                    <input type="range" id="touchLevel" min="0" max="100" value="50" class="slider">
+                    <div class="range-labels">
+                        <span>Minimal</span>
+                        <span>Intense</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="analyze-btn">Analyze Environment</button>
+            </form>
+        </div>
+
+        <div id="results" class="card results-hidden">
+            <h2>Analysis Results</h2>
+            <div id="resultContent"></div>
+        </div>
+
+        <div id="error" class="card error-hidden"></div>
     </div>
     <script src="script.js"></script>
 </body>

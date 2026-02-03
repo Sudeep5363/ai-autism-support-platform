@@ -43,8 +43,8 @@ class SensoryInput(BaseModel):
         description="Optional user identifier for personalization"
     )
 
-    class Config:
-        schema_extra = {
+    model_config = {
+        "json_schema_extra": {
             "example": {
                 "sound_level": 45,
                 "light_level": 60,
@@ -52,6 +52,7 @@ class SensoryInput(BaseModel):
                 "user_id": "user_001"
             }
         }
+    }
 
 
 class SensoryAnalysisResponse(BaseModel):
@@ -76,8 +77,8 @@ class SensoryAnalysisResponse(BaseModel):
         description="Priority level for caregiver attention"
     )
 
-    class Config:
-        schema_extra = {
+    model_config = {
+        "json_schema_extra": {
             "example": {
                 "sensory_state": "calm",
                 "sensory_score": 46.7,
@@ -90,3 +91,4 @@ class SensoryAnalysisResponse(BaseModel):
                 "alert_level": "low"
             }
         }
+    }
