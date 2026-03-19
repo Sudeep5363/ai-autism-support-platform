@@ -1,0 +1,99 @@
+# Node & frontend
+node_modules/
+package-lock.json
+yarn.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+*.egg-info/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# IDE configs
+.pylintrc
+.flake8
+setup.cfg
+pyproject.toml.local
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.pkl
+*.pickle
+
+# Environment
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+*.bak
+*~
+
+# Built model files (if large)
+*.joblib
+*.pkl
+*.h5
+
+# Credentials (never commit!)
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# IDE specific
+.vscode/settings.json
+.idea/workspace.xml
